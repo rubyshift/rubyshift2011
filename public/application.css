@@ -53,6 +53,14 @@ a:link { -webkit-tap-highlight-color:#FF5E99; }
 button {  width:auto; overflow:visible; }
 img { -ms-interpolation-mode:bicubic; }
 
+/* Fonts */
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Pacifico'), url('http://themes.googleusercontent.com/font?kit=yunJt0R8tCvMyj_V4xSjaXYhjbSpvc47ee6xR_80Hnw') format('woff');
+}
+
 /* Layout ========================================================================================================== */
 html { overflow-y:scroll; background:#FFF; }
 body { text-align:center; border-top:4px solid #000; }
@@ -69,15 +77,17 @@ h1 a { color:#444; }
 
 #amiando { text-align:center; }
 
-#register-today-wrapper { text-align:center; }
+#branding a { font-family:'Pacifico',arial,serif; font-size:24px; text-decoration:none; color:#000; }
+
+#register-today-wrapper { margin-top:50px; text-align:center; }
 #register-today { font-size:16px; }
 
 /* Masthead */
 #masthead { margin-bottom:20px; }
 #masthead #branding { float:left; }
-#masthead nav { float:right; margin-top:-5px; }
+#masthead nav { float:right; margin-top:3px; }
 #masthead nav li { float:right; }
-#masthead nav li a { display:block; padding:5px; }
+#masthead nav li a { display:block; margin-left:10px; padding:5px; font-size:14px; text-decoration:none; text-transform:uppercase; }
 
 /* Footer */
 footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
