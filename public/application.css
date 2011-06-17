@@ -55,7 +55,7 @@ img { -ms-interpolation-mode:bicubic; }
 
 /* Layout ========================================================================================================== */
 html { overflow-y:scroll; background:#FFF; }
-body { text-align:center; }
+body { text-align:center; border-top:4px solid #000; }
 body, select, input, textarea { color:#444; }
 #wrapper { width:950px; margin:0 auto; padding:20px; text-align:left; }
 
@@ -64,13 +64,44 @@ a, a:active, a:visited { color:#607890; }
 a:hover { color:#036; }
 
 h1 { font-size:18px; margin-bottom:10px; margin-top:20px; }
+h2 { font-size:14px; margin-bottom:5px; margin-top:10px; text-align:center; font-weight:bold; }
 h1 a { color:#444; }
 
 #amiando { text-align:center; }
 
-/* Navigation */
-#masthead li { float:right; }
-#masthead li a { display:block; padding:5px; }
+#register-today-wrapper { text-align:center; }
+#register-today { font-size:16px; }
+
+/* Masthead */
+#masthead { margin-bottom:20px; }
+#masthead #branding { float:left; }
+#masthead nav { float:right; margin-top:-5px; }
+#masthead nav li { float:right; }
+#masthead nav li a { display:block; padding:5px; }
 
 /* Footer */
 footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
+
+/* Sponsors */
+
+/* Schedule Table */
+.schedule { width:100%; border-top:1px solid #EAEAEA; }
+.schedule th, .schedule td { padding:5px; border-bottom:1px solid #EAEAEA; }
+.schedule th { font-weight:bold; }
+.schedule .event { width:350px; font-weight:bold; }
+.schedule .time { width:150px; }
+.schedule .speaker { width:200px; }
+.schedule .location { width:200px; }
+
+/* The Clearfix */
+#masthead:before,
+#masthead:after,
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#masthead:after, .clearfix:after { clear:both; }
+#masthead, .clearfix { zoom:1; } /* IE < 8 */
