@@ -1,209 +1,211 @@
-<div id="register-today-wrapper">
+<section id="register-today-wrapper">
   <a id="register-today" href="#tickets">Only 300 seats available — register today!</a>
-</div>
+</section>
 
-<h2>Our lovely sponsors</h2>
-
-<div class="sponsors clearfix">
-  <div class="span-12 clearfix">
-    <div class="sponsor span-4">
-      <img src="/sponsors/rubycentral.png">
-      <div class="diamond">Diamond</div>
-    </div>
-    <div class="sponsor span-4">
-      <img src="/sponsors/rubycentral.png">
-      <div class="diamond">Diamond</div>
-    </div>
-    <div class="sponsor span-4 last">
-      <img src="/sponsors/rubycentral.png">
-      <div class="diamond">Diamond</div>
-    </div>
+<section class="sponsors clearfix">
+  <h2>Our lovely sponsors</h2>
+  <div class="sponsor span-4">
+    <img src="/sponsors/rubycentral.png">
+    <div class="diamond">Diamond</div>
   </div>
-  <div class="span-12 last">
-    <p>Blah</p>
+  <div class="sponsor span-4">
+    <img src="/sponsors/rubycentral.png">
+    <div class="diamond">Diamond</div>
   </div>
-</div>
+  <div class="sponsor span-4">
+    <img src="/sponsors/rubycentral.png">
+    <div class="platinum">Platinum</div>
+  </div>
+  <div class="sponsor span-4">
+    <img src="/sponsors/rubycentral.png">
+    <div class="gold">Gold</div>
+  </div>
+  <div class="sponsor span-4">
+    <img src="/sponsors/rubycentral.png">
+    <div class="silver">Silver</div>
+  </div>
+  <div class="sponsor span-4 last">
+    <img src="/sponsors/rubycentral.png">
+    <div class="exhibitor">Exhibitor</div>
+  </div>
+</section>
 
-<h1><a id="venue">Venue</a></h1>
+<section id="venue">
+  <h1>Venue</h1>
+  <p>RubyShift 2011 will take place at Potyomkin Palace in the heart of Dnipropetrovsk, Ukraine. Rooms in a few hotels will be available at a special conference rate, a day before registration starts.</p>
+  <br>
+  <iframe width="950" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=CZuyAsQsIq7jFTJy4wIdSx0XAik3rXsQzuLbQDGS35StYk6VUg&amp;q=48.460657,35.070934&amp;aq=&amp;sll=48.460338,35.069259&amp;sspn=0.009676,0.021501&amp;ie=UTF8&amp;ll=48.460657,35.070934&amp;spn=0.002419,0.005375&amp;z=16&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=CZuyAsQsIq7jFTJy4wIdSx0XAik3rXsQzuLbQDGS35StYk6VUg&amp;q=48.460657,35.070934&amp;aq=&amp;sll=48.460338,35.069259&amp;sspn=0.009676,0.021501&amp;ie=UTF8&amp;ll=48.460657,35.070934&amp;spn=0.002419,0.005375&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</section>
 
-<p>RubyShift 2011 will take place at Potyomkin Palace in the heart of Dnipropetrovsk, Ukraine. Rooms in a few hotels will be available at a special conference rate, a day before registration starts.</p>
+<section id="schedule">
+  <h1>Schedule</h1>
+  <% if params[:vanga] == '1' %>
+    <h2>Friday, October 21</h2>
+    <table class="schedule">
+      <tr>
+        <th class="event">Event</th>
+        <th class="time">Time</th>
+        <th class="location">Location</th>
+      </tr>
+      <tr>
+        <td>Drinks</td>
+        <td>7:00 pm – 10:00 pm</td>
+        <td><a href="http://maps.google.com.ua/maps/place?cid=8966743062485920411&q=beerhouse+dnipropetrovsk&hl=en&dtab=0&sll=48.492519,34.792532&sspn=0.066725,0.622294&ie=UTF8&ll=48.805055,34.155121&spn=0,0&z=10">Beerhouse</a></td>
+      </tr>
+    </table>
 
-<br>
+    <h2>Saturday, October 22</h2>
+    <table class="schedule">
+      <tr>
+        <th class="event">Event</th>
+        <th class="time">Time</th>
+        <th class="location">Location</th>
+      </tr>
+      <tr>
+        <td>Registration</td>
+        <td>7:00 am – 9:45 am</td>
+        <td>Main Foyer</td>
+      </tr>
+      <tr class="even">
+        <td>Opening Talk / Welcome</td>
+        <td>10:00 am — 10:15 am</td>
+        <td>Plenary Room</td>
+      </tr>
+      <tr>
+        <td>Breakfast</td>
+        <td>10:15</td>
+        <td>Main Foyer</td>
+      </tr>
+      <tr class="even">
+        <td>Keynote</td>
+        <td>11:00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Talk</td>
+        <td>12:00</td>
+        <td></td>
+      </tr>
+      <tr class="even">
+        <td>LUNCH</td>
+        <td>13:00</td>
+        <td>Main Foyer</td>
+      </tr>
+      <tr>
+        <td>Talk</td>
+        <td>14:00</td>
+        <td></td>
+      </tr>
+      <tr class="even">
+        <td>Talk</td>
+        <td>15:00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Talk</td>
+        <td>16:00</td>
+        <td></td>
+      </tr>
+      <tr class="even">
+        <td>Lighting Talks</td>
+        <td>17:00</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Dinner Time</td>
+        <td>18:00</td>
+        <td>Main Foyer</td>
+      </tr>
+    </table>
 
-<iframe width="950" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=CZuyAsQsIq7jFTJy4wIdSx0XAik3rXsQzuLbQDGS35StYk6VUg&amp;q=48.460657,35.070934&amp;aq=&amp;sll=48.460338,35.069259&amp;sspn=0.009676,0.021501&amp;ie=UTF8&amp;ll=48.460657,35.070934&amp;spn=0.002419,0.005375&amp;z=16&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=CZuyAsQsIq7jFTJy4wIdSx0XAik3rXsQzuLbQDGS35StYk6VUg&amp;q=48.460657,35.070934&amp;aq=&amp;sll=48.460338,35.069259&amp;sspn=0.009676,0.021501&amp;ie=UTF8&amp;ll=48.460657,35.070934&amp;spn=0.002419,0.005375&amp;z=14" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    <h2>Sunday, October 22</h2>
+    <table class="schedule">
+      <tr>
+        <th class="event">Event</th>
+        <th class="time">Time</th>
+        <th class="location">Location</th>
+      </tr>
+      <tr>
+        <td>Keynote</td>
+        <td>10:00</td>
+        <td>Plenary Room</td>
+      </tr>
+      <tr class="even">
+        <td>Breakfast & Alka-Seltzer, Activated Carbon, Mineral Water</td>
+        <td>11:00</td>
+        <td>Main Foyer</td>
+      </tr>
+      <tr>
+        <td>Talk</td>
+        <td>11:15</td>
+        <td></td>
+      </tr>
+      <tr class="even">
+        <td>Talk</td>
+        <td>12:15</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>LUNCH</td>
+        <td>13:15</td>
+        <td>Main Foyer</td>
+      </tr>
+      <tr class="even">
+        <td>Talk</td>
+        <td>15:15</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Talk</td>
+        <td>16:15</td>
+        <td></td>
+      </tr>
+      <tr class="even">
+        <td>Lighting Talks</td>
+        <td>17:15</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Closing Remarks</td>
+        <td>18:15</td>
+        <td>Plenary Room</td>
+      </tr>
+      <tr class="even">
+        <td>Dinner with a speaker</td>
+        <td>7:30 pm — 9:30 pm</td>
+        <td>Various Locations</td>
+      </tr>
+    </table>
+  <% else %>
+    <p>Conference schedule will be announced soon. Stay tuned!</p>
+  <% end %>
+</section>
 
-
-<h1><a id="schedule">Schedule</a></h1>
-<% if params[:vanga] == '1' %>
-  <h2>Friday, October 21</h2>
-  <table class="schedule">
-    <tr>
-      <th class="event">Event</th>
-      <th class="time">Time</th>
-      <th class="location">Location</th>
-    </tr>
-    <tr>
-      <td>Drinks</td>
-      <td>7:00 pm – 10:00 pm</td>
-      <td><a href="http://maps.google.com.ua/maps/place?cid=8966743062485920411&q=beerhouse+dnipropetrovsk&hl=en&dtab=0&sll=48.492519,34.792532&sspn=0.066725,0.622294&ie=UTF8&ll=48.805055,34.155121&spn=0,0&z=10">Beerhouse</a></td>
-    </tr>
-  </table>
-
-  <h2>Saturday, October 22</h2>
-  <table class="schedule">
-    <tr>
-      <th class="event">Event</th>
-      <th class="time">Time</th>
-      <th class="location">Location</th>
-    </tr>
-    <tr>
-      <td>Registration</td>
-      <td>7:00 am – 9:45 am</td>
-      <td>Main Foyer</td>
-    </tr>
-    <tr class="even">
-      <td>Opening Talk / Welcome</td>
-      <td>10:00 am — 10:15 am</td>
-      <td>Plenary Room</td>
-    </tr>
-    <tr>
-      <td>Breakfast</td>
-      <td>10:15</td>
-      <td>Main Foyer</td>
-    </tr>
-    <tr class="even">
-      <td>Keynote</td>
-      <td>11:00</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Talk</td>
-      <td>12:00</td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>LUNCH</td>
-      <td>13:00</td>
-      <td>Main Foyer</td>
-    </tr>
-    <tr>
-      <td>Talk</td>
-      <td>14:00</td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>Talk</td>
-      <td>15:00</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Talk</td>
-      <td>16:00</td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>Lighting Talks</td>
-      <td>17:00</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Dinner Time</td>
-      <td>18:00</td>
-      <td>Main Foyer</td>
-    </tr>
-  </table>
-
-  <h2>Sunday, October 22</h2>
-  <table class="schedule">
-    <tr>
-      <th class="event">Event</th>
-      <th class="time">Time</th>
-      <th class="location">Location</th>
-    </tr>
-    <tr>
-      <td>Keynote</td>
-      <td>10:00</td>
-      <td>Plenary Room</td>
-    </tr>
-    <tr class="even">
-      <td>Breakfast & Alka-Seltzer, Activated Carbon, Mineral Water</td>
-      <td>11:00</td>
-      <td>Main Foyer</td>
-    </tr>
-    <tr>
-      <td>Talk</td>
-      <td>11:15</td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>Talk</td>
-      <td>12:15</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>LUNCH</td>
-      <td>13:15</td>
-      <td>Main Foyer</td>
-    </tr>
-    <tr class="even">
-      <td>Talk</td>
-      <td>15:15</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Talk</td>
-      <td>16:15</td>
-      <td></td>
-    </tr>
-    <tr class="even">
-      <td>Lighting Talks</td>
-      <td>17:15</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Closing Remarks</td>
-      <td>18:15</td>
-      <td>Plenary Room</td>
-    </tr>
-    <tr class="even">
-      <td>Dinner with a speaker</td>
-      <td>7:30 pm — 9:30 pm</td>
-      <td>Various Locations</td>
-    </tr>
-  </table>
-<% else %>
-  <p>Conference schedule will be announced soon. Stay tuned!</p>
-<% end %>
-
-<h1><a id="tickets">Tickets</a></h1>
-<p>RubyShift 2011 will have great speakers. However, before we announce who they are we are offering some extra-affordable tickets.
+<section id="tickets">
+  <h1>Tickets</h1>
+  <p>RubyShift 2011 will have great speakers. However, before we announce who they are we are offering some extra-affordable tickets.
 Rails contributors also get special pricing: 100% off if you have 50 commits or more, 50% for 20 commits, and 10% for 1 or more commits. <a href="https://spreadsheets.google.com/a/rubyshift.org/spreadsheet/viewform?formkey=dDkwTlVxMVd4WGdIN1E2ZEVjUUpWRlE6MQ">Apply</a> for a personal discount code.</p>
+  <br>
+  <div id="amiando">
+    <script type="text/javascript" src="https://www.amiando.com/resources/js/amiandoExport.js"></script><iframe src="https://www.amiando.com/QLXFLZL.html?viewType=iframe&panelId=1006897&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" height="450px" name="_amiandoIFrame1006897WZCe78QG" id="_amiandoIFrame1006897WZCe78QG"><p>This page requires frame support. Please use a frame compatible browser to see the amiando ticket sales widget.</p><p> Try out the <a href="http://www.amiando.com/">online event registration system</a> from amiando.</p></iframe>
+  </div>
+  <p>Please enter the correct information (name and company) for each participant, as this data will be used on the conference badges.</p>
+  <p>If you made a mistake with the participant information, please let us know at <a href="mailto:contact@rubyshift.org">contact@rubyshift.org</a>, and we can manually correct the information.</p>
+</section>
 
-<br>
+<section id="submit-a-proposal">
+  <h1>Submit a Proposal</h1>
+  <p>You're about to submit a proposal for 2nd conference on Ruby programming language in Eastern Europe. Thanks for that.</p>
+  <p>You can give a talk, organize a master class or panel discussion. To make a submission please, fill in <a href="https://spreadsheets.google.com/a/rubyshift.org/spreadsheet/viewform?formkey=dHdQQUhFRUE5ZkkwcmhPOUNpbkRGMkE6MQ">this form</a>. You an edit your submission later.</p>
+</section>
 
-<div id="amiando">
-  <script type="text/javascript" src="https://www.amiando.com/resources/js/amiandoExport.js"></script><iframe src="https://www.amiando.com/QLXFLZL.html?viewType=iframe&panelId=1006897&useDefaults=false&resizeIFrame=true" frameborder="0" width="650px" height="450px" name="_amiandoIFrame1006897WZCe78QG" id="_amiandoIFrame1006897WZCe78QG"><p>This page requires frame support. Please use a frame compatible browser to see the amiando ticket sales widget.</p><p> Try out the <a href="http://www.amiando.com/">online event registration system</a> from amiando.</p></iframe>
-</div>
+<section id="socialize">
+  <h1>Socialize</h1>
+  <p>Twitter: Tag your tweets with <a href="http://search.twitter.com/search?q=%23rubyshift">#rubyshift</a>, follow <a href="http://twitter.com/rubyshift">@rubyshift</a></p>
+  <p>Flickr: Tag your photos with <a href="http://www.flickr.com/photos/tags/rubyshift/">#rubyshift</a></p>
+</section>
 
-<p>Please enter the correct information (name and company) for each participant, as this data will be used on the conference badges.</p>
-<p>If you made a mistake with the participant information, please let us know at <a href="mailto:contact@rubyshift.org">contact@rubyshift.org</a>, and we can manually correct the information.</p>
-
-<h1><a id="submit-a-proposal">Submit a Proposal</a></h1>
-<p>You're about to submit a proposal for 2nd conference on Ruby programming language in Eastern Europe. Thanks for that.</p>
-<p>You can give a talk, organize a master class or panel discussion. To make a submission please, fill in <a href="https://spreadsheets.google.com/a/rubyshift.org/spreadsheet/viewform?formkey=dHdQQUhFRUE5ZkkwcmhPOUNpbkRGMkE6MQ">this form</a>. You an edit your submission later.</p>
-
-<!-- Socialize  -->
-
-<h1>Socialize</h1>
-
-<p>Twitter: Tag your tweets with <a href="http://search.twitter.com/search?q=%23rubyshift">#rubyshift</a>, follow <a href="http://twitter.com/rubyshift">@rubyshift</a></p>
-
-<p>Flickr: Tag your photos with <a href="http://www.flickr.com/photos/tags/rubyshift/">#rubyshift</a></p>
-
-<!-- Sponsor Us  -->
-
-<h1>Sponsor Us</h1>
-
-<p>Interested in sponsoring? Download our <a href="/concept.pdf">sponsorship prospectus</a> and then drop us a line at <a href="mailto:sponsorships@rubyshift.org">sponsorships@rubyshift.org</a>.</p>
-
-
+<section id="sponsor-us">
+  <h1>Sponsor Us</h1>
+  <p>Interested in sponsoring? Download our <a href="/concept.pdf">sponsorship prospectus</a> and then drop us a line at <a href="mailto:sponsorships@rubyshift.org">sponsorships@rubyshift.org</a>.</p>
+</section>

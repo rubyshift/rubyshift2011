@@ -94,7 +94,12 @@ footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
 
 /* Sponsors */
 .sponsor {  }
-.diamond { padding:10px; color:#FFF; background:#9CC8C9; border-radius:5px; }
+.sponsor div { padding:5px; font-size:12px; color:#FFF; border-radius:5px; }
+.diamond { background:#828283; }
+.platinum { background:#FFC622; }
+.gold { background:#9CC8C9; }
+.silver { background:#DFDFDF; }
+.exhibitor { background:#D7828D; }
 
 /* Schedule Table */
 .schedule { width:100%; border-top:1px solid #EAEAEA; }
