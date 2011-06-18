@@ -79,8 +79,8 @@ h1 a { color:#444; }
 
 #branding a { font-family:'Pacifico',arial,serif; font-size:24px; text-decoration:none; color:#000; }
 
-#register-today-wrapper { margin-top:30px; text-align:center; }
-#register-today { font-size:16px; }
+#register-today { margin-top:30px; text-align:center; }
+#register-today a { font-size:18px; }
 
 /* Masthead */
 #masthead { margin-bottom:20px; }
