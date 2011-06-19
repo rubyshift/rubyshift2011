@@ -109,6 +109,7 @@ footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
 .schedule .time { width:150px; }
 .schedule .speaker { width:200px; }
 .schedule .location { width:200px; }
+.schedue .break { font-style:italic; text-transform:uppercase; }
 
 /* The Clearfix */
 #masthead:before,
