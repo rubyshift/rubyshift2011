@@ -1,12 +1,13 @@
-source "http://rubygems.org"
+source 'http://rubygems.org'
 
-gem "sinatra"
+gem 'sinatra'
+gem 'httparty'
 
 group :test, :development do
-  gem "shotgun"
+  gem 'shotgun'
 end
 
 group :test do
-  gem "rack-test", :require => "rack/test"
-  gem "shoulda"
+  gem 'rack-test', :require => 'rack/test'
+  gem 'shoulda'
 end
