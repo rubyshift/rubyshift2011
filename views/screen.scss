@@ -1,3 +1,5 @@
+@import "compass";
+
 /*# Reset ========================================================================================================== */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn,
 em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
@@ -40,10 +42,10 @@ button, input, select, textarea { margin:0; }
 
 input:valid, textarea:valid   {  }
 input:invalid, textarea:invalid {
-      border-radius:1px;
-    -moz-box-shadow:0px 0px 5px red;
- -webkit-box-shadow:0px 0px 5px red;
-         box-shadow:0px 0px 5px red;
+  border-radius:1px;
+  -moz-box-shadow:0px 0px 5px red;
+  -webkit-box-shadow:0px 0px 5px red;
+  box-shadow:0px 0px 5px red;
 }
 
 ::-moz-selection{ background:#FF5E99; color:#fff; text-shadow:none; }
@@ -55,10 +57,10 @@ img { -ms-interpolation-mode:bicubic; }
 
 /* Fonts */
 @font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Pacifico'), url('http://themes.googleusercontent.com/font?kit=yunJt0R8tCvMyj_V4xSjaXYhjbSpvc47ee6xR_80Hnw') format('woff');
+  font-family:'Pacifico';
+  font-style:normal;
+  font-weight:normal;
+  src:local('Pacifico'), url('http://themes.googleusercontent.com/font?kit=yunJt0R8tCvMyj_V4xSjaXYhjbSpvc47ee6xR_80Hnw') format('woff');
 }
 
 /* Layout ========================================================================================================== */
@@ -77,14 +79,13 @@ h1 a { color:#444; }
 
 #amiando { text-align:center; }
 
-#branding a { font-family:'Pacifico',arial,serif; font-size:24px; text-decoration:none; color:#000; }
-
 #register-today { margin-top:30px; text-align:center; }
 #register-today a { font-size:18px; }
 
 /* Masthead */
-#masthead { margin-bottom:20px; }
+#masthead { margin-bottom:20px; @include clearfix; }
 #masthead #branding { float:left; }
+#masthead #branding a { display:block; height:45px; font-family:'Pacifico',arial,serif; font-size:28px; text-decoration:none; color:#000; }
 #masthead nav { float:right; margin-top:3px; }
 #masthead nav li { float:right; }
 #masthead nav li a { display:block; margin-left:10px; padding:5px; font-size:14px; text-decoration:none; text-transform:uppercase; }
@@ -112,17 +113,43 @@ footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
 .schedue .break { font-style:italic; text-transform:uppercase; }
 
 /* The Clearfix */
-#masthead:before,
-#masthead:after,
-.clearfix:before,
-.clearfix:after {
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden;
+.clearfix { @include clearfix; }
+
+/* Badge */
+#dates {
+  left:-55px;
+  height:30px;
+  top:55px;
+  position:absolute;
+  text-decoration:none;
+  width:250px;
+  @include rotate(-45deg);
+  span {
+    background:black;
+    color:white;
+    font-size:16px;
+    left:0;
+    padding:5px 0;
+    position:absolute;
+    text-align:center;
+    width:250px;
+    @include box-shadow(rgba(black, 0.2) 1px 1px 10px);
+    @include transition(opacity, 1s);
+    &:last-child {
+      /* this is the backside */
+      background:red;
+      opacity:0;
+    }
+  }
+  &:hover span {
+    &:first-child {
+      opacity:0;
+    }
+    &:last-child {
+      opacity:1;
+    }
+  }
 }
-#masthead:after, .clearfix:after { clear:both; }
-#masthead, .clearfix { zoom:1; } /* IE < 8 */
 
 /* Grid */
 .column, .span-1, .span-2, .span-3, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-20, .span-21, .span-22, .span-23, .span-24 {float:left;margin-right:10px;}
