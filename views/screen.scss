@@ -112,6 +112,12 @@ footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
 .schedule .location { width:200px; }
 .schedue .break { font-style:italic; text-transform:uppercase; }
 
+/* Banner */
+.banner { margin:30px 0; }
+.banner .blurb { text-align:center; }
+.banner .date-banner { text-align:center; }
+.banner .dates { font-size:28px; }
+
 /* The Clearfix */
 .clearfix { @include clearfix; }
 
