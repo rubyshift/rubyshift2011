@@ -118,7 +118,7 @@ footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
   left:-55px;
   height:30px;
   top:55px;
-  position:absolute;
+  position:fixed;
   text-decoration:none;
   width:250px;
   @include rotate(-45deg);
@@ -134,8 +134,7 @@ footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
     @include box-shadow(rgba(black, 0.2) 1px 1px 10px);
     @include transition(opacity, 1s);
     &:last-child {
-      /* this is the backside */
-      background:red;
+      background:#FF003F;
       opacity:0;
     }
   }
