@@ -4,7 +4,7 @@ gem 'compass'
 gem 'sinatra'
 gem 'sass'
 
-gem 'newrelic_rpm'
+gem 'newrelic_rpm', :require => false
 
 group :test do
   gem 'rack-test', :require => 'rack/test'
