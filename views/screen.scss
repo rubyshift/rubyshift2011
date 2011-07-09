@@ -41,6 +41,7 @@ body, select, input, textarea { color:#444; }
 h1 { font-size:22px; margin-bottom:10px; margin-top:20px; color:#FF0000; font-family:Georgia,serif; }
 h2 { font-size:18px; margin-bottom:2px; margin-top:10px; text-align:center; font-weight:bold; }
 h3 { font-size:18px; margin-bottom:2px; font-weight:bold; }
+h4 { margin-bottom:0.75em; }
 h1 a { color:#444; }
 
 #amiando { text-align:center; }
@@ -58,6 +59,7 @@ h1 a { color:#444; }
 
 /* Speakers */
 #speakers .speaker img { @include border-radius(3px); }
+#speakers .speaker p { margin-bottom:0.5em; }
 
 /* Sections */
 section { margin-bottom:40px; }
