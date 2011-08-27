@@ -3,10 +3,6 @@ class RubyShift < Sinatra::Base
     Compass.add_project_configuration(File.join(Sinatra::Application.root, 'compass.config'))
   end
 
-  configure :production do
-    require 'newrelic_rpm'
-  end
-
   set :root,   File.dirname(__FILE__)
   set :public, File.join(root, 'public')
 
