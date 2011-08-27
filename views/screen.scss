@@ -11,26 +11,21 @@ $base-line-height: 20px;
 @include establish-baseline;
 @include blueprint-grid;
 
-::-moz-selection{ background:#FF5E99; color:#fff; text-shadow:none; }
-::selection { background:#FF5E99; color:#fff; text-shadow:none; }
-
-a:link { -webkit-tap-highlight-color:#FF5E99; }
-button {  width:auto; overflow:visible; }
-img { -ms-interpolation-mode:bicubic; }
 p { margin:0; }
 
 /* Layout */
-html { overflow-y:scroll; background:#FFF; }
+html { overflow-y:scroll; background:#fff; }
 body { text-align:center; border-top:4px solid #000; }
 body, select, input, textarea { color:#444; }
 #wrapper { margin-bottom:10px; padding:20px; text-align:left; @include container; }
 
-h1 { font-size:22px; margin-bottom:10px; margin-top:20px; color:#FF0000; font-family:Georgia,serif; }
+h1 { font-size:22px; margin-bottom:10px; margin-top:20px; color:#FF0000; font-family:Palatino, "Georgia", "Times New Roman", serif; }
 h2 { font-size:18px; margin-bottom:2px; margin-top:10px; text-align:center; font-weight:bold; }
 h3 { font-size:18px; margin-bottom:2px; font-weight:bold; }
 h4 { margin-bottom:0.75em; }
 h1 a { color:#444; }
 
+/* Amiando */
 #amiando { text-align:center; }
 
 /* Masthead */
@@ -53,15 +48,7 @@ section { margin-bottom:40px; }
 /* Footer */
 footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
 
-/* Sponsors */
-.sponsor div { padding:5px; font-size:12px; color:#FFF; border-radius:5px; }
-.diamond { background:#828283; }
-.platinum { background:#9CC8C9; }
-.gold { background:#FFC622; }
-.silver { background:#DFDFDF; }
-.exhibitor { background:#D7828D; }
-
-#sponsors { text-align:center; }
+#sponsors div { text-align:center; }
 
 /* Schedule Table */
 .schedule { width:100%; border-top:1px solid #EAEAEA; }
@@ -73,7 +60,6 @@ footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
 
 /* Banner */
 .banner { margin:30px 0; font-family:Palatino, "Georgia", "Times New Roman", serif; font-style:italic; }
-.banner .blurb { text-align:center; }
 .banner .date-banner { text-align:center; }
 .banner .date { margin:4px 0 6px; font-size:28px; font-weight:bold; }
 
