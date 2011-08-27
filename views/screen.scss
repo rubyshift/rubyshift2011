@@ -11,19 +11,6 @@ $base-line-height: 20px;
 @include establish-baseline;
 @include blueprint-grid;
 
-/* Minimal base styles */
-input[type="radio"] { vertical-align:text-bottom; }
-input[type="checkbox"] { vertical-align:bottom; }
-label, input[type="button"], input[type="submit"], input[type="image"], button { cursor:pointer; }
-button, input, select, textarea { margin:0; }
-
-input:invalid, textarea:invalid {
-  border-radius:1px;
-  -moz-box-shadow:0px 0px 5px red;
-  -webkit-box-shadow:0px 0px 5px red;
-  box-shadow:0px 0px 5px red;
-}
-
 ::-moz-selection{ background:#FF5E99; color:#fff; text-shadow:none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow:none; }
 
@@ -46,16 +33,15 @@ h1 a { color:#444; }
 
 #amiando { text-align:center; }
 
-#register-today { margin-top:30px; text-align:center; }
-#register-today a { font-size:18px; }
-
 /* Masthead */
 #masthead { margin-bottom:20px; @include clearfix; }
 #masthead #branding { float:left; }
 #masthead #branding a { display:block; width:177px; height:42px; text-indent:-9999px; background:url('/assets/logo.png') no-repeat 0 0; }
 #masthead nav { float:right; margin-top:3px; }
+#masthead nav ul { margin:0; padding:0; }
 #masthead nav li { float:right; list-style:none; }
-#masthead nav li a { display:block; margin-left:10px; padding:5px; font-size:14px; text-decoration:none; text-transform:uppercase; }
+#masthead nav li a { display:block; padding:7px 10px; font-size:16px; text-decoration:none; text-transform:uppercase; }
+#masthead nav li.register a { background:#f33; color:#fff; @include border-radius(3px); @include text-shadow(0 -1px rgba(204, 0, 0, 0.75)); }
 
 /* Speakers */
 #speakers .speaker img { @include border-radius(3px); }
@@ -86,10 +72,10 @@ footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
 .schedule .break { font-style:italic; text-transform:uppercase; color:#999; }
 
 /* Banner */
-.banner { margin:30px 0; }
+.banner { margin:30px 0; font-family:Palatino, "Georgia", "Times New Roman", serif; font-style:italic; }
 .banner .blurb { text-align:center; }
 .banner .date-banner { text-align:center; }
-.banner .dates { margin:4px 0 6px; font-size:28px; }
+.banner .date { margin:4px 0 6px; font-size:28px; font-weight:bold; }
 
 /* The Clearfix */
 .clearfix { @include clearfix; }
@@ -99,38 +85,3 @@ footer { padding:30px 0; text-align:center; color:#FFF; background:#000; }
 #people li { float:left; list-style:none; margin:0; padding:0; }
 #people li a { display:block; float:left; margin-right:5px; }
 #people li a img { display:block; }
-
-/* Badge */
-#dates {
-  left:-55px;
-  height:30px;
-  top:55px;
-  position:fixed;
-  text-decoration:none;
-  width:250px;
-  @include rotate(-45deg);
-  span {
-    background:orange;
-    color:white;
-    font-size:16px;
-    left:0;
-    padding:5px 0;
-    position:absolute;
-    text-align:center;
-    width:250px;
-    @include box-shadow(rgba(black, 0.2) 1px 1px 10px);
-    @include transition(opacity, 1s);
-    &:last-child {
-      background:#FF0000;
-      opacity:0;
-    }
-  }
-  &:hover span {
-    &:first-child {
-      opacity:0;
-    }
-    &:last-child {
-      opacity:1;
-    }
-  }
-}
