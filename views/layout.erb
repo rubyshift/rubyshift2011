@@ -9,8 +9,8 @@
     <script src="/assets/jquery.min.js" type="text/javascript"></script>
   </head>
   <body>
-    <div id="wrapper">
-      <header id="masthead">
+    <header id="masthead">
+      <div class="container">
         <div id="branding"><a href="/">RubyShift 2011</a></div>
         <nav>
           <ul>
@@ -20,8 +20,10 @@
             <li><a href="#venue">Venue</a></li>
           </ul>
         </nav>
-      </header>
+      </div>
+    </header>
 
+    <div id="wrapper">
       <%= yield %>
     </div>
 
@@ -54,7 +56,7 @@
           $target = $(target);
 
           $(scrollElement).stop().animate({
-            'scrollTop': $target.offset().top
+            'scrollTop': $target.offset().top - 70
           }, 500, 'swing', function() {
             window.location.hash = target;
           });

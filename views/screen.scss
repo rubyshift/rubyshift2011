@@ -15,9 +15,8 @@ p { margin:0; }
 
 /* Layout */
 html { overflow-y:scroll; background:#fff; }
-body { text-align:center; border-top:4px solid #000; }
+body { text-align:center; }
 body, select, input, textarea { color:#444; }
-#wrapper { margin-bottom:10px; padding:20px; text-align:left; @include container; }
 
 h1 { font-size:22px; margin-bottom:10px; margin-top:20px; color:#FF0000; font-family:Palatino, "Georgia", "Times New Roman", serif; }
 h2 { font-size:18px; margin-bottom:2px; margin-top:10px; text-align:center; font-weight:bold; }
@@ -25,11 +24,13 @@ h3 { font-size:18px; margin-bottom:2px; font-weight:bold; }
 h4 { margin-bottom:0.75em; }
 h1 a { color:#444; }
 
+#wrapper { margin-bottom:10px; padding:50px 20px 20px; text-align:left; @include container; }
+
 /* Amiando */
 #amiando { text-align:center; }
 
 /* Masthead */
-#masthead { margin-bottom:20px; @include clearfix; }
+#masthead { width:100%; padding:10px 0; position:fixed; @include clearfix; background:#fff; border-top:4px solid #000; }
 #masthead #branding { float:left; }
 #masthead #branding a { display:block; width:177px; height:42px; text-indent:-9999px; background:url('/assets/logo.png') no-repeat 0 0; }
 #masthead nav { float:right; margin-top:3px; }
